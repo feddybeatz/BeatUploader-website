@@ -1,0 +1,7 @@
+# Vercel local project settings
+.vercel/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
