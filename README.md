@@ -8,9 +8,9 @@ This folder is the standalone static website repository for Vercel. It has no bu
 
 The site's download buttons point directly to the latest BeatUploader Windows installer release asset:
 
-<https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Setup.exe>
+<https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Installer.exe>
 
-For that download to work, publish a GitHub Release in `feddybeatz/BeatUploaderVST` and attach the installer with the exact filename `BeatUploader-Setup.exe`. The VST repository currently has no published release, so the direct download will return unavailable until that release asset exists.
+For that download to work, publish a GitHub Release in `feddybeatz/BeatUploaderVST` and attach the installer with the exact filename `BeatUploader-Installer.exe`. The VST repository currently has no published release, so the direct download will return unavailable until that release asset exists.
 
 ## Google OAuth
 
