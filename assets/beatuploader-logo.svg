@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">BeatUploader logo</title>
+  <desc id="desc">A bright lime U-shaped symbol with green side blocks and an orange upward arrow.</desc>
+  <rect width="512" height="512" fill="#0b130d"/>
+  <g stroke="#071008" stroke-width="13" stroke-linejoin="round">
+    <rect x="43" y="193" width="67" height="91" rx="10" fill="#31df50"/>
+    <rect x="402" y="193" width="67" height="91" rx="10" fill="#31df50"/>
+    <path d="M96 126h70v166a90 90 0 0 0 180 0V126h70v166a160 160 0 0 1-320 0z" fill="#c8ff2c"/>
+    <path d="m256 151 91 119h-53v81h-76v-81h-53z" fill="#ff681f"/>
+  </g>
+</svg>
