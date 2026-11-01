@@ -1,6 +1,5 @@
-// Vercel's download buttons link directly to this GitHub Release asset.
-// Publish an asset with this exact filename: BeatUploader-Installer.exe
+// Served as a static download by the Vercel website.
 // Never put OAuth secrets or client credential JSON files here.
 window.BeatUploaderSite = {
-  downloadUrl: 'https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Installer.exe'
+  downloadUrl: '/downloads/BeatUploader-Installer.exe'
 };

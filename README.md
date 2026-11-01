@@ -6,11 +6,9 @@ This folder is the standalone static website repository for Vercel. It has no bu
 
 ## Download button
 
-The site's download buttons point directly to the latest BeatUploader Windows installer release asset:
+The installer is stored in this repository at `downloads/BeatUploader-Installer.exe` and served directly by Vercel. The website buttons use `/downloads/BeatUploader-Installer.exe`; replacing that file and pushing the website repository to `main` updates the download when Vercel finishes deploying.
 
-<https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Installer.exe>
-
-For that download to work, publish a GitHub Release in `feddybeatz/BeatUploaderVST` and attach the installer with the exact filename `BeatUploader-Installer.exe`. The VST repository currently has no published release, so the direct download will return unavailable until that release asset exists.
+The standalone app and VST3 bundle are built from the VST repository and packaged with Inno Setup. Never commit OAuth client credentials or token files here.
 
 ## Google OAuth
 
