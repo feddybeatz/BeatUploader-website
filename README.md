@@ -1,24 +1,17 @@
 # BeatUploader website
 
-Standalone static website for Vercel. No build step or npm dependencies are required.
+Live site: <https://beatuploader-ten.vercel.app/>
 
-## Deploy on Vercel
+This folder is the standalone static website repository for Vercel. It has no build step or npm dependencies. Vercel is connected to this GitHub repository, so pushing website changes to `main` triggers deployment automatically; there is no need to run a separate Vercel deploy command.
 
-1. Create a separate GitHub repository for this website.
-2. Push the contents of this folder to that repository (the repository root should contain `index.html`).
-3. In Vercel, import the website repository. Use the project root `/` and leave the build command and output directory blank; Vercel serves the static HTML files directly.
-4. Add your production domain to the Google OAuth consent-screen configuration. Publish the privacy notice at `/privacy.html` and provide its public URL in the Google Auth Platform branding/verification setup.
+## Download button
 
-## Installer download
+The site's download buttons point directly to the latest BeatUploader Windows installer release asset:
 
-The download buttons currently point to the BeatUploader GitHub Releases page. Publish a Windows installer as a release asset, then update `site-config.js` to its direct public download URL, for example:
+<https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Setup.exe>
 
-```js
-window.BeatUploaderSite = {
-  downloadUrl: 'https://github.com/OWNER/REPOSITORY/releases/latest/download/BeatUploader-Setup.exe'
-};
-```
+For that download to work, publish a GitHub Release in `feddybeatz/BeatUploaderVST` and attach the installer with the exact filename `BeatUploader-Setup.exe`. The VST repository currently has no published release, so the direct download will return unavailable until that release asset exists.
 
-The repository currently has no release installer asset, so the website does not claim that an installer is already downloadable. Build and test a Release VST3/Standalone package and create the installer before advertising a live download.
+## Google OAuth
 
-Do not put OAuth client secrets, refresh tokens, or credential JSON files in this website repository. Keep app-specific values out of the public site unless they are intended for public display.
+The public privacy notice is at <https://beatuploader-ten.vercel.app/privacy.html>. Configure that URL and your verified production domain in Google Auth Platform as part of the OAuth app's production verification. Never put OAuth client secrets, refresh tokens, or credential JSON files in this public website repository.

@@ -1,5 +1,6 @@
-// Update this URL when you publish a Windows installer release.
-// This must point to a public page/file; never put OAuth secrets here.
+// Vercel's download buttons link directly to this GitHub Release asset.
+// Publish an asset with this exact filename: BeatUploader-Setup.exe
+// Never put OAuth secrets or client credential JSON files here.
 window.BeatUploaderSite = {
-  downloadUrl: 'https://github.com/feddybeatz/BeatUploaderVST/releases'
+  downloadUrl: 'https://github.com/feddybeatz/BeatUploaderVST/releases/latest/download/BeatUploader-Setup.exe'
 };
