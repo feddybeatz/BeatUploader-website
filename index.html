@@ -3,36 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1A1233">
+  <meta name="theme-color" content="#FBFAFF">
   <meta name="description" content="BeatUploader turns your beat and cover art into a ready-to-upload YouTube video, with channel upload built in.">
   <meta name="google-site-verification" content="whSgSDvDRP-aqt7Dzjs6V63b5Cp7k1WOI1N-VbP5Bo4">
   <title>BeatUploader — From beat to upload</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="site-config.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
   <header class="topbar wrap">
-    <a class="brand" href="#top" aria-label="BeatUploader home"><img class="brand-logo" src="assets/beatuploader-logo.svg" alt=""><span>BEAT<span class="brand-light">UPLOADER</span></span></a>
+    <a class="brand" href="#top" aria-label="BeatUploader home"><img class="brand-logo" src="assets/beatuploader-logo.svg" alt="" width="38" height="38"><span>BEAT<span class="brand-light">UPLOADER</span></span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links" aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#features">Features</a><a href="privacy.html">Privacy</a><a class="nav-download" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">Get BeatUploader <span>↗</span></a></nav>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#workflow">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav-download" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">Download</a>
+    </nav>
   </header>
+
   <main id="top">
     <section class="hero wrap">
-      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> BUILT FOR BEATMAKERS</p><h1>Your beat.<br><span>Ready for</span><br>YouTube.</h1><p class="hero-text">Turn an exported beat and cover image into a polished video, then send it straight to the YouTube channel you choose.</p><div class="hero-actions"><a class="button button-primary" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">Get BeatUploader <span>↗</span></a><a class="text-link" href="#workflow">See how it works <span>↓</span></a></div><div class="hero-meta"><span><i class="check">✓</i> Windows</span><span><i class="check">✓</i> VST3 workflow</span><span><i class="check">✓</i> Your channel, your upload</span></div></div>
-      <div class="hero-art" aria-label="BeatUploader video layout preview"><div class="art-glow"></div><div class="mini-window"><div class="window-top"><div class="window-dots"><b></b><b></b><b></b></div><span>BEATUPLOADER <small>• READY</small></span><span class="window-icon">↗</span></div><div class="window-content"><div class="window-heading"><span>EXPORT PREVIEW</span><span>16:9 / 30 FPS</span></div><div class="video-preview"><div class="cover-art"><span class="cover-orbit"></span><span class="cover-label">YOUR<br>ARTWORK</span></div><div class="video-side"></div><span class="video-play">▶</span></div><div class="preview-title"><span>VIDEO TITLE</span><strong>(FREE) R&amp;B Type Beat — Midnight Drive</strong></div><div class="preview-status"><span class="status-pill"><i></i> CHANNEL CONNECTED</span><span>UPLOAD READY <b>↗</b></span></div></div></div><div class="floating-tag tag-format"><span>▣</span> COVER + BEAT</div><div class="floating-tag tag-upload"><span>↗</span> YOUR CHANNEL</div><div class="hero-index">01 <span>—</span> MAKE IT RELEASE-READY</div></div>
-      <div class="hero-bottomline"><span>LESS BUSYWORK. MORE BEATS.</span><span>MADE FOR THE MOMENT AFTER “BOUNCE.”</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> By Feddy Beatz</p>
+        <h1>Your beat.<br><span>Ready for</span><br>YouTube.</h1>
+        <p class="hero-text">Turn an exported beat and cover image into a polished video, then send it straight to the YouTube channel you choose.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">Download for Windows</a>
+          <a class="text-link" href="#workflow">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Windows 10 and 11</span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Standalone + VST3</span>
+          <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Your channel, your upload</span>
+        </div>
+      </div>
+
+      <div class="hero-art" role="img" aria-label="The BeatUploader window with tiles for beat, cover, video and thumbnail, a preview of the video frame, an editable title and an Upload Beat button">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+        <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <div class="app-window">
+          <div class="aw-bar"><span class="aw-logo"></span>Beat Uploader<span class="aw-chip">Feddy Beatz</span></div>
+          <div class="aw-body">
+            <div class="aw-frame"><div class="aw-square">Cover, 1080 x 1080</div></div>
+            <div class="aw-tiles"><i class="t1">Beat</i><i class="t2">Cover</i><i class="t3">Video</i><i class="t4">Thumb</i></div>
+            <div class="aw-title">(FREE) Kehlani x Aaliyah R&amp;B Type Beat - "Midnight Drive"</div>
+            <div class="aw-steps"><span class="s1">Render</span><span class="s2">Upload</span><span class="s3">Thumbnail</span></div>
+            <div class="aw-progress"><i></i></div>
+            <div class="aw-upload">Upload Beat</div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="workflow section wrap" id="workflow"><div class="section-intro"><p class="eyebrow">A SHORTER ROUTE TO RELEASE</p><h2>Three steps.<br><span>One finished upload.</span></h2></div><div class="steps"><article class="step"><div class="step-number">01 <span>INPUT</span></div><div class="step-icon icon-file">♫</div><h3>Choose your beat</h3><p>Select your exported audio and the cover image you want listeners to see.</p></article><article class="step"><div class="step-number">02 <span>SHAPE</span></div><div class="step-icon icon-frame">▧</div><h3>Set the details</h3><p>Preview a title, add your beat name, BPM and key, and see the cover framed for video.</p></article><article class="step"><div class="step-number">03 <span>PUBLISH</span></div><div class="step-icon icon-send">↗</div><h3>Send to your channel</h3><p>Connect your Google account, choose the channel, and confirm the upload from BeatUploader.</p></article></div></section>
-    <section class="feature-band" id="features"><div class="wrap feature-layout"><div class="feature-copy"><p class="eyebrow">MADE TO FIT YOUR FLOW</p><h2>Keep your focus<br>on the <span>music.</span></h2><p>BeatUploader handles repetitive setup around a beat release, so your export can move toward your channel with less friction.</p><a class="text-link" href="#download">Explore the workflow <span>↓</span></a></div><div class="feature-grid"><article class="feature-card"><span class="feature-symbol">▧</span><span class="feature-index">01 / FRAME</span><h3>Artwork, composed</h3><p>Your square cover is cropped cleanly and centered in a widescreen video frame.</p></article><article class="feature-card"><span class="feature-symbol">Aa</span><span class="feature-index">02 / METADATA</span><h3>Details in view</h3><p>Shape a title from your beat name and review it before you upload.</p></article><article class="feature-card"><span class="feature-symbol">◎</span><span class="feature-index">03 / ACCOUNT</span><h3>Your channel stays yours</h3><p>Sign in with Google and connect the YouTube channel you choose.</p></article><article class="feature-card"><span class="feature-symbol">↗</span><span class="feature-index">04 / DELIVERY</span><h3>One clear next step</h3><p>Send the finished video to YouTube and get the resulting link back.</p></article></div></div></section>
-    <section class="download-section wrap" id="download"><div class="download-card"><div class="download-orb"></div><div class="download-content"><p class="eyebrow">BEATUPLOADER FOR WINDOWS</p><h2>Make the next<br>upload <span>your easiest.</span></h2><p>Get the installer and bring BeatUploader into your beat-release workflow.</p><a class="button button-primary" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">View Windows download <span>↗</span></a><small class="download-note">Windows 10/11 · VST3 + standalone app · Download is published with the latest release.</small></div><div class="download-version"><span>RELEASE CHANNEL</span><strong>WINDOWS</strong><span>VST3 · STANDALONE</span></div></div></section>
-    <section class="faq-section wrap"><div class="faq-heading"><p class="eyebrow">GOOD TO KNOW</p><h2>Before you<br><span>hit upload.</span></h2></div><div class="faq-list"><details><summary>Does BeatUploader upload automatically? <span>+</span></summary><p>No. You connect your account and start each upload yourself. Review the title and details before sending a video.</p></details><details><summary>Which channel receives the video? <span>+</span></summary><p>The YouTube channel you authorize during Google sign-in. Check the connected channel shown in the app before uploading.</p></details><details><summary>What does the app need? <span>+</span></summary><p>A Windows computer, an audio export, cover artwork, an internet connection and a Google account with a YouTube channel. Check the release notes for additional requirements.</p></details><details><summary>Where can I learn how account data is handled? <span>+</span></summary><p>Read the <a href="privacy.html">BeatUploader privacy notice</a>. OAuth access is used for YouTube features you initiate.</p></details></div></section>
-    <section class="closing wrap"><p>MAKE SOMETHING WORTH HEARING.</p><span>THEN MAKE IT EASY TO FIND.</span></section>
+
+    <section class="workflow section wrap" id="workflow">
+      <div class="section-intro">
+        <p class="eyebrow">A shorter route to release</p>
+        <h2>Four steps.<br><span>One finished upload.</span></h2>
+      </div>
+      <div class="steps">
+        <article class="step"><div class="step-number">1</div><h3>Drop your beat</h3><p>Drag in your exported audio and the cover image you want viewers to see.</p></article>
+        <article class="step"><div class="step-number">2</div><h3>Add the extras</h3><p>Optional: a looping background video and a separate thumbnail for YouTube.</p></article>
+        <article class="step"><div class="step-number">3</div><h3>Check the details</h3><p>Review the title and description. Both are editable before anything is sent.</p></article>
+        <article class="step"><div class="step-number">4</div><h3>Press Upload</h3><p>BeatUploader renders the video and sends it to the channel you connected.</p></article>
+      </div>
+    </section>
+
+    <section class="feature-band" id="features">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="eyebrow">Made to fit your flow</p>
+          <h2>Keep your focus<br>on the <span>music.</span></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></span><h3>Drag and drop everything</h3><p>Drop your beat, cover, video or thumbnail onto the window. BeatUploader sorts the files by type.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg></span><h3>Muted background video</h3><p>Loop a video under your beat. The video's own sound is dropped, so only your beat plays.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><h3>Your words, your template</h3><p>Start from your own title and description, then change anything before you upload.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M21 16l-5-5-8 8"/></svg></span><h3>A separate thumbnail</h3><p>Use a different image as the YouTube thumbnail than the one inside the video.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></span><h3>Choose your channel</h3><p>Sign in with Google, pick the channel, and switch to another whenever you need.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><rect x="8" y="6" width="8" height="12"/></svg></span><h3>Framed for YouTube</h3><p>Your cover is cropped to a square and centered in a 1920 x 1080 frame, never stretched.</p></article>
+          <article class="feature-card"><span class="feature-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5M15 3v5M6 8h12v4a6 6 0 0 1-12 0zM12 18v3"/></svg></span><h3>Standalone and VST3</h3><p>One Windows installer sets up the app and a VST3 plugin for your DAW.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section wrap" id="download">
+      <div class="download-card">
+        <div class="download-content">
+          <p class="eyebrow">BeatUploader for Windows</p>
+          <h2>Make the next<br>upload <span>your easiest.</span></h2>
+          <p>Get the installer and bring BeatUploader into your beat-release workflow.</p>
+          <a class="button button-primary" data-download-link href="https://github.com/feddybeatz/BeatUploaderVST/releases">Download for Windows</a>
+          <small class="download-note">Windows 10/11 · VST3 + standalone app · Download is published with the latest release.</small>
+        </div>
+        <div class="download-version"><strong>What you get</strong><span>Standalone app</span><span>VST3 plugin</span><span>One installer</span></div>
+      </div>
+    </section>
+
+    <section class="faq-section wrap" id="faq">
+      <div class="faq-heading"><p class="eyebrow">Good to know</p><h2>Before you<br><span>hit upload.</span></h2></div>
+      <div class="faq-list">
+        <details><summary>Does BeatUploader upload automatically? <span>+</span></summary><p>Only when you press Upload Beat. You connect your account once, then start each upload yourself after reviewing the title and details.</p></details>
+        <details><summary>Are my uploads public? <span>+</span></summary><p>New uploads start as private. Open YouTube Studio to choose the visibility you want.</p></details>
+        <details><summary>Which channel receives the video? <span>+</span></summary><p>The YouTube channel you authorize during Google sign-in. Check the connected channel shown in the app before uploading.</p></details>
+        <details><summary>Can I set a custom thumbnail? <span>+</span></summary><p>Yes, add one in the Thumbnail tile. YouTube may require your channel to be verified before it accepts custom thumbnails.</p></details>
+        <details><summary>What does the app need? <span>+</span></summary><p>A Windows computer, an audio export, cover artwork or a background video, an internet connection and a Google account with a YouTube channel. Check the release notes for additional requirements.</p></details>
+        <details><summary>Where can I learn how account data is handled? <span>+</span></summary><p>Read the <a href="privacy.html">BeatUploader privacy notice</a>. OAuth access is used for YouTube features you initiate.</p></details>
+      </div>
+    </section>
+
+    <section class="closing wrap"><p>Make something worth hearing.</p><span>Then make it easy to find.</span></section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top"><img class="brand-logo" src="assets/beatuploader-logo.svg" alt=""><span>BEAT<span class="brand-light">UPLOADER</span></span></a><span class="footer-credit">A release tool for independent beatmakers.</span><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:beatzfeddy@gmail.com">Contact</a></div><span class="copyright">© <span data-year></span> Feddy Beatz</span></div><div class="wrap footer-disclaimer">YouTube is a trademark of Google LLC. BeatUploader is an independent product and is not affiliated with or endorsed by YouTube or Google.</div></footer>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top"><img class="brand-logo" src="assets/beatuploader-logo.svg" alt="" width="32" height="32"><span>BEAT<span class="brand-light">UPLOADER</span></span></a>
+      <span class="footer-credit">A release tool for independent beatmakers.</span>
+      <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:beatzfeddy@gmail.com">Contact</a></div>
+      <span class="copyright">© <span data-year></span> Feddy Beatz</span>
+    </div>
+    <div class="wrap footer-disclaimer">YouTube is a trademark of Google LLC. BeatUploader is an independent product and is not affiliated with or endorsed by YouTube or Google.</div>
+  </footer>
 </body>
 </html>
